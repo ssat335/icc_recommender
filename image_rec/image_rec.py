@@ -252,8 +252,9 @@ def main():
 
 
     # =================================
-    # Perform kNN
+    # Perform kNN on quey icc_images
     # =================================
+
     # Read items in query folder
     print("Reading query icc_images from query folder: {0}".format(query_dir))
 
