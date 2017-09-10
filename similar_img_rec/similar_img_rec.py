@@ -1,6 +1,6 @@
 '''
 
- image_rec.py (author: Shameer Sathar / git: https://github.com/ssat335)
+ identical_img_rec.py (author: Shameer Sathar / git: https://github.com/ssat335)
  
  Image identicality recommender system using an autoencoder-clustering model.
  
