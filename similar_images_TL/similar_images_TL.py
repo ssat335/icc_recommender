@@ -1,9 +1,11 @@
 """
 
- sim_img_TL.py  (author: Shameer Sathar / git: https://github.com/ssat335)
+ identical_icc_images_TL.py  (author: Shameer Sathar / git: https://github.com/ssat335)
 
- Uses transfer learning on pre-trained VGG image classification models to
- get feature vectors and plot the tSNE of the feature vectors.
+ We find identical icc_images in a image_repository by using transfer learning
+ using a pre-trained VGG image classifier. We plot the 5 most identical
+ icc_images for each image in the image_repository, and plot the tSNE for all
+ our image feature vectors.
 
 """
 import sys, os
@@ -33,7 +35,7 @@ def main():
     # ================================================
     imgs, filename_heads, X = [], [], []
     path = "db"
-    print("Reading icc_images from '{}'...".format(path))
+    print("Reading icc_images from '{}' directory...".format(path))
     for f in os.listdir(path):
 
         # Process filename
@@ -57,8 +59,8 @@ def main():
 
     X = np.array(X)  # feature vectors
     imgs = np.array(imgs)  # icc_images
-    print(" imgs = {}".format(imgs.shape))
-    print(" X_features = {}".format(X.shape))
+    print("imgs.shape = {}".format(imgs.shape))
+    print("X_features.shape = {}".format(X.shape))
 
     # ===========================
     # Find k-nearest icc_images to each image
