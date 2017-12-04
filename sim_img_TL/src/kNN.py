@@ -1,6 +1,6 @@
 '''
 
- KNN.py (author: Shameer Sathar /  https://github.com/ssat335)
+ kNN.py (author: Shameer Sathar /  https://github.com/ssat335)
  
  General kNN model class object using sklearn library.
 
