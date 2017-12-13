@@ -9,7 +9,7 @@ from matplotlib import offsetbox
 from sklearn import manifold, datasets
 from matplotlib.offsetbox import OffsetImage, AnnotationBbox
 
-def run_tsne(icc_images, X, filename):
+def plot_tsne(icc_images, X, filename):
 
     def imscatter(x, y, icc_images, ax=None, zoom=1.0):
         if ax is None:
