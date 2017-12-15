@@ -35,7 +35,7 @@ def main():
     # ================================================
     imgs, filename_heads, X = [], [], []
     path = "db"
-    print("Reading icc_images from '{}' directory...".format(path))
+    print("Reading icc_images from '{}' directory...\n".format(path))
     for f in os.listdir(path):
 
         # Process filename
@@ -60,7 +60,7 @@ def main():
     X = np.array(X)  # feature vectors
     imgs = np.array(imgs)  # icc_images
     print("imgs.shape = {}".format(imgs.shape))
-    print("X_features.shape = {}".format(X.shape))
+    print("X_features.shape = {}\n".format(X.shape))
 
     # ===========================
     # Find k-nearest icc_images to each image
